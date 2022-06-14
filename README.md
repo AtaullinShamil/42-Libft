@@ -5,7 +5,7 @@ It contains a lot of general purpose functions
 # Makefile
 |Command | Action|
 |--------|-------|
-| 'make' |       |
+| 'make' |compiles .c files and builds libft.a|
 |'make clean'|       |
 |'make fclean'|       |
 |'make re'|       |
