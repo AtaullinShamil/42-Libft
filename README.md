@@ -5,7 +5,7 @@ This project is about coding a C library. It contains a lot of general purpose f
 |Command|Action|
 |-------|------|
 |`make`|Compiles **.c** files and creates **libft.a** library|
-|`make bonus`|Compiles bonus part|
+|`make bonus`|Compiles bonus part **.c** files|
 |`make clean`|Deletes **.o** files|
 |`make fclean`|Deletes **.o** files and **libft.a** library|
 |`make re`|Rebuilds the library|
