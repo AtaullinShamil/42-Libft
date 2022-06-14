@@ -109,8 +109,10 @@ This project is about coding a C library. It contains a lot of general purpose f
 | Return value   	| None |
 | External functs | write |
 | Description    	| Outputs the integer ’n’ to the given file descriptor.	|
+
 # Bonus functions
-For this part we implemented a struct defining the well-known linked lists
+For this part we implemented a struct defining the linked lists
+
 ```C
 typedef	struct	s_list
 {
@@ -118,8 +120,6 @@ typedef	struct	s_list
 	struct	s_list	*next;
 }			t_list;
 ```
-
-Bonus functions to implement
 
 | Bonus Function | Description |
 | :------------: | :---------: |
