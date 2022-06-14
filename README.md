@@ -109,3 +109,26 @@ This project is about coding a C library. It contains a lot of general purpose f
 | Return value   	| None |
 | External functs | write |
 | Description    	| Outputs the integer ’n’ to the given file descriptor.	|
+# Bonus functions
+For this part we implemented a struct defining the well-known linked lists
+```C
+typedef	struct	s_list
+{
+	void		*content;
+	struct	s_list	*next;
+}			t_list;
+```
+
+Bonus functions to implement
+
+| Bonus Function | Description |
+| :------------: | :---------: |
+| ``ft_lstnew`` | Creates new node allocating with ``malloc`` |
+| ``ft_lstadd_front`` | Adds new node at the beginning of the linked list |
+| ``ft_lstsize`` | Returns number of elements of linked list |
+| ``ft_lstlast`` | Retrieves last node of the list |
+| ``ft_lstadd_back`` | Adds new node at the end of the linked list |
+| ``ft_lstdelone`` | Deletes, frees, and applies function del to content of a given node |
+| ``ft_lstclear`` | Deletes a given element and every element after that |
+| ``ft_lstiter`` | Applies a function to the content of every node of the linked list |
+| ``ft_lstmap`` | Applies function to a copy of the list, freeing when necessary |
