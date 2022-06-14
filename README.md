@@ -7,6 +7,6 @@ It contains a lot of general purpose functions
 |-------|------|
 |`make`|Compiles .c files and creates libft.a|
 |`make clean`|Deletes .o files|
-|`make fclean`|Delete .o files and libft.a|
+|`make fclean`|Deletes .o files and libft.a|
 |`make re`|Rebuilds the library|
 
