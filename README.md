@@ -7,6 +7,6 @@ It contains a lot of general purpose functions
 |--------|-------|
 | `make` |compiles .c files and builds libft.a|
 |`make clean`|       |
-|'make fclean'|       |
-|'make re'|       |
+|`make fclean`|       |
+|`make re`|       |
 
