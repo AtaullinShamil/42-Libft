@@ -10,4 +10,4 @@ This project is about coding a C library. It contains a lot of general purpose f
 |`make fclean`|Deletes **.o** files and the **libft.a** library|
 |`make re`|Rebuilds the library|
 # Subject
-[The assignment can be viewed here!](https://github.com/AtaullinShamil/42-Libft/blob/main/Libft_subject.pdf)
+**The assignment can be viewed here!**[link](https://github.com/AtaullinShamil/42-Libft/blob/main/Libft_subject.pdf)
