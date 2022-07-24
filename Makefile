@@ -9,6 +9,9 @@
 # **************************************************************************** #
 
 NAME = libft.a
+HEADER = libft.h
+CC = gcc
+FLAGS = -Wall -Werror -Wextra
 
 LIST =	ft_atoi.c\
 		ft_bzero.c\
@@ -55,12 +58,8 @@ LIST_B =	ft_lstadd_front.c\
 			ft_lstiter.c\
 			ft_lstmap.c\
 
-
-OBJ = $(patsubst %.c, %.o, $(LIST))
-OBJ_B = $(patsubst %.c, %.o, $(LIST_B))
-
-HEADER = libft.h
-FLAGS = -Wall -Werror -Wextra
+OBJ = $(LIST:.c=.o)
+OBJ_B = $(LIST_B:.c=.o)
 
 all : $(NAME)
 
@@ -68,7 +67,7 @@ $(NAME) : $(OBJ)
 	ar rcs $(NAME) $?
 
 %.o : %.c $(HEADER) Makefile
-	gcc $(FLAGS) -c $< -o $@
+	$(CC) $(FLAGS) -c $< -o $@
 
 bonus:
 	@make OBJ="$(OBJ_B)" all
