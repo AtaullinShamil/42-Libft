@@ -38,32 +38,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
-// 	else if (len > new_len)
-// 	{
-// 		str = (char *)malloc(sizeof(char) * (new_len + 1));
-// 		if (!str)
-// 			return (NULL);
-// 		while (s[i] && i < new_len)
-// 			str[i++] = s[start++];
-// 		str[i] = '\0';
-// 		return (str);
-// 	}
-// 	else
-// 	{
-// 		str = (char *)malloc(sizeof(char) * (len + 1));
-// 		if (!str)
-// 			return (NULL);
-// 		while (s[i] && i < len)
-// 			str[i++] = s[start++];
-// 		str[i] = '\0';
-// 		return (str);
-// 	}
-// }
-
-// int	main(void)
-// {
-// 	char s[] = "asdfdsafasdf777fadfafsda";
-
-// 	printf ("%s\n", ft_substr(s, 55, 3));
-// 	return (0);
-// }

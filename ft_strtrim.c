@@ -10,7 +10,7 @@
 
 #include "libft.h"
 
-static int	proverka(char s, char const *set)
+static int	ft_check(char s, char const *set)
 {
 	size_t	i;
 
@@ -35,10 +35,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	start = 0;
 	i = 0;
-	while (s1[start] && proverka(s1[start], set))
+	while (s1[start] && ft_check(s1[start], set))
 		start++;
 	finish = ft_strlen(s1);
-	while (start < finish && proverka(s1[finish - 1], set))
+	while (start < finish && ft_check(s1[finish - 1], set))
 		finish--;
 	str = (char *)malloc(sizeof(char) * ((finish - start) + 1));
 	if (!str)
@@ -52,8 +52,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str[i] = '\0';
 	return (str);
 }
-
-// int	main(void)
-// {
-// 	printf("%s\n", ft_strtrim("12gjksdngdfs12gdsfg12", ""));
-// }
